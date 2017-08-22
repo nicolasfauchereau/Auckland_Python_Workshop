@@ -1,6 +1,6 @@
 # Python for Climate and Meteorological Data Analysis and Visualisation
 
-[NIWA Auckland](http://www.niwa.co.nz/) / Climate and Weather Applications, Forecasting Services
+[NIWA Auckland](http://www.niwa.co.nz/) / Climate and Weather Applications, Forecasting Services  
 Auckland, New Zealand, 31 August and 1 September 2017
 
 Contact:
