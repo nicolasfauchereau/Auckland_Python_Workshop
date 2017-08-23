@@ -105,4 +105,4 @@ $ jupyter notebook
 
 That should bring up the Jupyter notebook dashboard (looking as below), you should be ready to go !
 
-![](http://github/nicolasfauchereau/Python-for-data-analysis-and-visualisation/blob/master/session_1/notebooks/images/ipython_dashboard.png)
+![](https://github.com/nicolasfauchereau/Auckland_Python_Workshop/raw/master/images/jupyter_dashboard.png)
