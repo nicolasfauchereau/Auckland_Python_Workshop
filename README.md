@@ -32,6 +32,8 @@ The Anaconda python distribution (**NOTE**: select the version shipping with Pyt
 
 For your platform.
 
+You should not need administrator rights, as Anaconda is completely self-contained and can be installed in your `HOME` directory. I suggest installing `Anaconda` in `/Users/USERNAME/anaconda` on Macs, and `C:\Users\USERNAME\anaconda` on Windows
+
 Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running (at the command line, i.e. in Windows(r) select `Cmd.exe`, on Mac the `Terminal` application in `Utilities`):
 
 ```
@@ -83,4 +85,24 @@ $ conda install seaborn
 $ conda install xarray
 ```
 
+All of this can also be done using the Anaconda Navigator GUI (Graphical User Interface) which looks like below
+
+![](https://github.com/nicolasfauchereau/Auckland_Python_Workshop/raw/master/images/navigator.png)
+
+If you go the `environment` tab on the left, and select the `root` environment (we will talk about the concept of environment later in the workshop) you can then search, select and install available packages, including the ones above
+
+
 ## Running the Jupyter notebook
+
+The material of the tutorial is in the form of [Jupyter notebooks](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). In a nutshell a Jupyter notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, mathematics, plots and rich media into a single document, which makes it an ideal medium for teaching and exploring code.
+
+
+After uncompressing the archive of the repo (or after cloning it with ```git```), navigate to the corresponding directory (containing the ```*.ipynb``` files, e.g. `session_1/notebooks`) and type:
+
+```
+$ jupyter notebook
+```
+
+That should bring up the Jupyter notebook dashboard (looking as below), you should be ready to go !
+
+![](http://github/nicolasfauchereau/Python-for-data-analysis-and-visualisation/blob/master/session_1/notebooks/images/ipython_dashboard.png)
