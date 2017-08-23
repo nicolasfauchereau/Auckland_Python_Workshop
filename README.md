@@ -104,6 +104,6 @@ After uncompressing the archive of the repo (or after cloning it with ```git```)
 $ jupyter notebook
 ```
 
-That should bring up the Jupyter notebook dashboard (looking as below), you should be ready to go !
+That should bring up the Jupyter notebook dashboard (looking as below) in your default Browser, you should be ready to go !
 
 ![](https://github.com/nicolasfauchereau/Auckland_Python_Workshop/raw/master/images/jupyter_dashboard.png)
