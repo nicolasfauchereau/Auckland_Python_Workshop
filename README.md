@@ -89,15 +89,16 @@ All of this can also be done using the Anaconda Navigator GUI (Graphical User In
 
 ![](https://github.com/nicolasfauchereau/Auckland_Python_Workshop/raw/master/images/navigator.png)
 
-If you go the `environment` tab on the left, and select the `root` environment (we will talk about the concept of environment later in the workshop) you can then search, select and install available packages, including the ones above
+If you go the `Environments` tab on the left, and select the `root` environment (we will talk about the concept of Python environments later in the workshop) you can then search, select and install available packages, including the ones mentionned above.
 
 
 ## Running the Jupyter notebook
 
-The material of the tutorial is in the form of [Jupyter notebooks](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). In a nutshell a Jupyter notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, mathematics, plots and rich media into a single document, which makes it an ideal medium for teaching and exploring code.
+The material of the tutorial is in the form of [Jupyter notebooks](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). In a nutshell a Jupyter notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, rendered mathematic expression, plots, images, and rich media into a **single document**.
 
+It is in my opinion the best environment when you are doing **exploratory data analysis**, and it allows you to weave comments, background information, interpretations and references along with the code itself, and it can be exported to a variety of formats (HTML, pdf) for sharing with colleagues. I **strongly** recommend spending some time learning about the notebook and its many features.
 
-After uncompressing the archive of the repo (or after cloning it with ```git```), navigate to the corresponding directory (containing the ```*.ipynb``` files, e.g. `session_1/notebooks`) and type:
+After uncompressing the archive of the repo (or after cloning it with ```git```), navigate to the `notebooks` directory (containing the ```*.ipynb``` files) and type:
 
 ```
 $ jupyter notebook
