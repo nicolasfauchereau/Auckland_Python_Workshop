@@ -151,6 +151,6 @@ That should bring up the Jupyter notebook dashboard (looking as below) in your d
 
 + `pandas.ipynb`
 
-  This is where we're gonna 
+  This is where we're gonna spend quite a bit of time ! [Pandas](http://pandas.pydata.org/) is **THE** library that you need to use when dealing with *tabular* data, *i.e.* "spreadsheet-like" data, where data is stored in 2D arrays with rows and column labels, the type of data you find in csv, tab-delimited or space-delimited or Excel files.
 
   ​
