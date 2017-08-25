@@ -107,3 +107,50 @@ $ jupyter notebook
 That should bring up the Jupyter notebook dashboard (looking as below) in your default Browser, you should be ready to go !
 
 ![](https://github.com/nicolasfauchereau/Auckland_Python_Workshop/raw/master/images/jupyter_dashboard.png)
+
+## contents
+
++ `test.ipynb`: 
+
+  A simple test Jupyter notebook to test the installation of the main libraries and their version 
+
++ `Jupyter_notebook`: 
+
+  Introduction to the main features of the **Jupyter notebook **
+
++ `introduction_python.ipynb`: Introduction the **basics** of the python language:
+
+  + what's an *interpreted programming language*, what is the python *interpreter*
+  + how to write a python script
+  + basic native data types 
+    + dealing with numbers in native Python 
+    + dealing with `strings` and their formatting 
+    + `lists`, `tuples`, `dictionnaries`, ...
+  + arithmetic operators (`+. -, *, =`)
+  + logical operators (`==, >=, <=, !=`) and how they relate to booleans (`True / False`)
+  + control flow structures (`for, if / elif / else, while` etc.)
+  + reusing your code: writing *functions*, *modules* and *packages*
+
++ `Numpy.ipynb`: 
+
+  A introduction to Numpy: numpy introduces in particular a data structure called the `ndarray` (*N-dimensional* array) which can store numerical values. It is the foundational library of the Python scientific *ecosystem*. In this notebook we'll learn the main principles of manipulating numpy *ndarrays*. While you might actually not spend much time dealing with numpy itself, it is necessary to understand its basic principles, as (almost) everything else in scientific Python is built on top of `numpy`.
+
+  + how to create numpy arrays 
+  + indexing, slicing, reshaping, transposing, etc. 
+  + main methods and functions in numpy operating on numpy `ndarrays`
+
++ `plotting.ipynb`:
+
+  In this notebook we'll go over the basics of **Matplotlib**, the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* this is the main foundational library of the Python Scientific ecosystem. A number of — more specialised — plotting libraries have been built on top of Matplotlib. One we will briefly go over in particular is *seaborn*, a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *altair*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
+
++ `mapping.ipynb`: 
+
+  Making maps in Python: a brief overview of **basemap**, **cartopy**, and — for interactive maps — **folium**. We'll see also briefly how to read shapefiles (with [geopandas](http://geopandas.org/)), transform into a [geojson](http://geojson.org/) and edit in the browser. 
+
+  ​
+
++ `pandas.ipynb`
+
+  This is where we're gonna 
+
+  ​
