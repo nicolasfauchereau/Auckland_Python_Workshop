@@ -22,7 +22,7 @@ Nicolas Fauchereau
 
 ## The Anaconda python distribution
 
-For this tutorial, I **strongly** recommend installing the **Anaconda Python distribution**. It is a completely free enterprise-ready Python distribution for large-scale data processing, predictive analytics, and scientific computing. It includes the python interpreter itself, the python standard library as well as a set of packages exposing data structures and methods for data manipulation and scientific computing and visualization. In particular it provides [Numpy](http://www.numpy.org/), [Scipy](http://www.scipy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), etc ... i.e. all the main packages we will be using during the tutorial. The full list of packages is available at:
+For this tutorial, I **strongly** recommend installing the **Anaconda Python distribution**. It is a completely free *enterprise-ready* Python distribution for large-scale data processing, predictive analytics, and scientific computing. It includes the python interpreter itself, the python standard library as well as a set of packages exposing data structures and methods for data manipulation and scientific computing and visualization. In particular it provides [Numpy](http://www.numpy.org/), [Scipy](http://www.scipy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), etc ... i.e. all the main packages we will be using during the tutorial. The full list of packages is available at:
 
 [http://docs.continuum.io/anaconda/pkgs.html](http://docs.continuum.io/anaconda/pkgs.html)
 
@@ -110,47 +110,84 @@ That should bring up the Jupyter notebook dashboard (looking as below) in your d
 
 ## contents
 
+The following is a brief description of the workshop material content: 
+
+
+
 + `test.ipynb`: 
 
   A simple test Jupyter notebook to test the installation of the main libraries and their version 
 
-+ `Jupyter_notebook`: 
+  ​
+
++ `Jupyter_notebook.ipynb`: 
 
   Introduction to the main features of the **Jupyter notebook **
+
+  ​
 
 + `introduction_python.ipynb`: Introduction the **basics** of the python language:
 
   + what's an *interpreted programming language*, what is the python *interpreter*
+
   + how to write a python script
+
   + basic native data types 
     + dealing with numbers in native Python 
     + dealing with `strings` and their formatting 
     + `lists`, `tuples`, `dictionnaries`, ...
+
   + arithmetic operators (`+. -, *, =`)
+
   + logical operators (`==, >=, <=, !=`) and how they relate to booleans (`True / False`)
+
   + control flow structures (`for, if / elif / else, while` etc.)
+
   + reusing your code: writing *functions*, *modules* and *packages*
+
+    ​
 
 + `Numpy.ipynb`: 
 
-  A introduction to Numpy: numpy introduces in particular a data structure called the `ndarray` (*N-dimensional* array) which can store numerical values. It is the foundational library of the Python scientific *ecosystem*. In this notebook we'll learn the main principles of manipulating numpy *ndarrays*. While you might actually not spend much time dealing with numpy itself, it is necessary to understand its basic principles, as (almost) everything else in scientific Python is built on top of `numpy`.
+  A introduction to Numpy: Numpy introduces in particular a data structure called the `ndarray` (*N-dimensional* array) which can store numerical values. It is the foundational library of the Python  *scientific ecosystem*. In this notebook we'll learn the main principles of manipulating numpy *ndarrays*. While you might actually not spend much time working with numpy itself, it is necessary to understand its basic principles, as (almost) everything else in scientific Python is built on top of `numpy`. We'll see:
 
-  + how to create numpy arrays 
-  + indexing, slicing, reshaping, transposing, etc. 
-  + main methods and functions in numpy operating on numpy `ndarrays`
+  + How to create numpy arrays 
 
-+ `plotting.ipynb`:
+  + indexing, slicing, reshaping, transposing, etc.
 
-  In this notebook we'll go over the basics of **Matplotlib**, the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* this is the main foundational library of the Python Scientific ecosystem. A number of — more specialised — plotting libraries have been built on top of Matplotlib. One we will briefly go over in particular is *seaborn*, a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *altair*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
+  + The main methods and functions in numpy operating on numpy `ndarrays`
 
-+ `mapping.ipynb`: 
+    ​
 
-  Making maps in Python: a brief overview of **basemap**, **cartopy**, and — for interactive maps — **folium**. We'll see also briefly how to read shapefiles (with [geopandas](http://geopandas.org/)), transform into a [geojson](http://geojson.org/) and edit in the browser. 
++ `Scipy.ipynb`: 
 
-  ​
+  + [Scipy](http://www.scipy.org)  is the second pilar of the python scientific ecosystem. Where Numpy introduces a *data structure* (the ndarray), Scipy provides a collection of efficient *scientific algorithms*. These are organized in *submodules*, and cover topics ranging from linear algebra to signal processing and optimisation (see [here](https://docs.scipy.org/doc/scipy/reference/) for list of the submodules and their dedicated tutorial). In this notebook we will focus on *interpolation*, and on some of the *statistical* algorithms and methods that scipy makes available.
+
+    ​
 
 + `pandas.ipynb`
 
-  This is where we're gonna spend quite a bit of time ! [Pandas](http://pandas.pydata.org/) is **THE** library that you need to use when dealing with *tabular* data, *i.e.* "spreadsheet-like" data, where data is stored in 2D arrays with rows and column labels, the type of data you find in csv, tab-delimited or space-delimited or Excel files.
+  This is where we're gonna spend quite a bit of time ! [Pandas](http://pandas.pydata.org/) is **THE** library that you need to use when dealing with *tabular* data, *i.e.* "spreadsheet-like" data, where values are stored in 2D arrays with rows and column labels. It is typically the type of data you find in csv, tab / space delimited or Excel files. In this notebook we'll see first: 
+
+  + The basics of the main data structures in Pandas: the **Series** and the **Dataframe** 
+  + How to read from / write to common data files (csv, excel, space delimited, tab delimited etc). It will include how to read from a list of e.g. csv files, and concatenating their data in a Dataframe
+  + How to manipulate tabular data in Pandas, from selecting rows / columns to more sophisticated conditional indexing 
+  + How to perform complex queries and assignements on Pandas Dataframes
+  + How to perform **groupby** operations (*split / apply / combine*)
+  + How to deal with Missing Values
+
+  One of the strenths of Pandas is its ability to store, and perform sophisticated operations on, **time-series**: i.e. data that is indexed by dates, dates and times, timestamps, etc. In the second part of the Panda tutorial we will focus on time-series manipulation in Pandas. 
+
+  ​
+
++ `plotting.ipynb`:
+
+  In this notebook we'll go over the basics of **Matplotlib**, the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python Scientific ecosystem, on wich a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is *seaborn*, a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
+
+  ​
+
++ `mapping.ipynb`: 
+
+  Making maps in Python: a brief overview of [**basemap**](https://matplotlib.org/basemap/), [**cartopy**](http://scitools.org.uk/cartopy/), and — for interactive maps — [**folium**](https://github.com/python-visualization/folium). We'll see also briefly how to read shapefiles (with [geopandas](http://geopandas.org/)), transform into a [geojson](http://geojson.org/) and edit in the browser. 
 
   ​
