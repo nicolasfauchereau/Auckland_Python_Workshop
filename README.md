@@ -34,7 +34,7 @@ For your platform.
 
 You should not need administrator rights, as Anaconda is completely self-contained and can be installed in your `HOME` directory. I suggest installing `Anaconda` in `/Users/USERNAME/anaconda` on Macs, and `C:\Users\USERNAME\anaconda` on Windows
 
-Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running (at the command line, i.e. in Windows(r) select `Cmd.exe`, on Mac the `Terminal` application in `Utilities`):
+Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running (at the command line, i.e. in Windows select `Cmd.exe`, on Mac the `Terminal` application in `Utilities`):
 
 ```
 $ conda update conda
@@ -68,6 +68,16 @@ $ conda install netcdf4
 
 ```
 $ conda install basemap
+```
+
+### Cartopy
+
+[**Cartopy**](http://scitools.org.uk/cartopy/) is a the second library for making geographical maps that we are going to see. It has been developed by the UKMO, and will eventually replace **Basemap**. However to this date Cartopy does not have all the features present in Basemap.
+
+Cartopy is not available through the anaconda standard channel, to install you need to use the community maintained *conda-forge* channel, with this syntax:
+
+```
+$ conda install -c conda-forge cartopy
 ```
 
 ### Seaborn
@@ -132,7 +142,7 @@ The following is a brief description of the workshop material content:
 
   + how to write a python script
 
-  + basic native data types 
+  + basic Python native data types:
     + dealing with numbers in native Python 
     + dealing with `strings` and their formatting 
     + `lists`, `tuples`, `dictionnaries`, ...
@@ -161,9 +171,9 @@ The following is a brief description of the workshop material content:
 
 + `Scipy.ipynb`: 
 
-  + [Scipy](http://www.scipy.org)  is the second pilar of the python scientific ecosystem. Where Numpy introduces a *data structure* (the ndarray), Scipy provides a collection of efficient *scientific algorithms*. These are organized in *submodules*, and cover topics ranging from linear algebra to signal processing and optimisation (see [here](https://docs.scipy.org/doc/scipy/reference/) for list of the submodules and their dedicated tutorial). In this notebook we will focus on *interpolation*, and on some of the *statistical* algorithms and methods that scipy makes available.
+  [Scipy](http://www.scipy.org)  is the second pilar of the python scientific ecosystem. Where Numpy introduces a *data structure* (the ndarray), Scipy provides a collection of efficient *scientific algorithms*. These are organized in *submodules*, and cover topics ranging from linear algebra to signal and image processing and optimisation (see [here](https://docs.scipy.org/doc/scipy/reference/) for list of the submodules and their dedicated tutorial). In this notebook we will focus on **interpolation**, and on some of the **statistical** algorithms and methods that scipy makes available.
 
-    ​
+  ​
 
 + `pandas.ipynb`
 
@@ -176,13 +186,33 @@ The following is a brief description of the workshop material content:
   + How to perform **groupby** operations (*split / apply / combine*)
   + How to deal with Missing Values
 
-  One of the strenths of Pandas is its ability to store, and perform sophisticated operations on, **time-series**: i.e. data that is indexed by dates, dates and times, timestamps, etc. In the second part of the Panda tutorial we will focus on time-series manipulation in Pandas. 
+  One of the strenths of Pandas is its ability to store, and perform sophisticated operations on, **time-series**: i.e. data that is indexed by dates, dates and times, timestamps, etc. In the second part of the Pandas tutorial we will focus on **time-series manipulation in Pandas**. In particular we'll see: 
+
+  + how to read in and correctly parse files containing date / time information 
+
+  + how to resample time-series 
+
+  + rolling window operations (e.g. moving averages)
+
+  + how to deal with missing values and missing index values
+
+    ​
+
++ `xarray.ipynb`: 
+
+  [xarray](http://xarray.pydata.org/en/stable/) is a library to read / write netcdf files and for the manipulation of multi-dimensional labelled arrays, it is especially handy for *gridded data* varying along *latitudes, longitudes, time, depth, height*, etc. Its design follows closely that of Pandas, meaning that familiarity with Pandas allows to quickly pick up xarray. We'll see how to read, write netcdf files in xarray, and perform a series of common analyses such as: 
+
+  + calculating a climatology 
+  + calculating anomalies 
+  + going from and to Pandas Dataframes
+  + calculating composite anomalies
+  + resampling, aggregation, groupby operations
 
   ​
 
 + `plotting.ipynb`:
 
-  In this notebook we'll go over the basics of **Matplotlib**, the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python Scientific ecosystem, on wich a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is *seaborn*, a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
+  In this notebook we'll go over the basics of **Matplotlib**, the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python scientific ecosystem, on wich a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is *seaborn*, a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
 
   ​
 
