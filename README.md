@@ -212,12 +212,12 @@ The following is a brief description of the workshop material content:
 
 + `plotting.ipynb`:
 
-  In this notebook we'll go over the basics of **Matplotlib**, the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python scientific ecosystem, on wich a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is *seaborn*, a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
+  In this notebook we'll go over the basics of [**Matplotlib**](https://matplotlib.org/), the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python scientific ecosystem, on wich a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is [**seaborn**](https://seaborn.pydata.org/), a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
 
   ​
 
 + `mapping.ipynb`: 
 
-  Making maps in Python: a brief overview of [**basemap**](https://matplotlib.org/basemap/), [**cartopy**](http://scitools.org.uk/cartopy/), and — for interactive maps — [**folium**](https://github.com/python-visualization/folium). We'll see also briefly how to read shapefiles (with [geopandas](http://geopandas.org/)), transform into a [geojson](http://geojson.org/) and edit in the browser. 
+  Making maps in Python: a brief overview of [**basemap**](https://matplotlib.org/basemap/), [**cartopy**](http://scitools.org.uk/cartopy/), and — very briefly, for interactive maps — [**folium**](https://github.com/python-visualization/folium). We'll see also briefly how to read shapefiles (with [geopandas](http://geopandas.org/)), transform into a [geojson](http://geojson.org/) and edit in the browser. 
 
   ​
