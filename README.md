@@ -31,7 +31,7 @@ For your platform.
 
 You should not need administrator rights, as Anaconda is completely self-contained and can be installed in your `HOME` directory. I suggest installing `Anaconda` in `/Users/USERNAME/anaconda` on Macs, and `C:\Users\USERNAME\anaconda` on Windows
 
-Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running (at the command line, i.e. in Windows select `Cmd.exe`, on Mac the `Terminal` application in `Utilities`):
+Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running (at the command line, i.e. in Windows select `Cmd.exe`, on Mac the `Terminal` application in `Utilities`, the `$` sign signifies the command prompt, so do not enter it !, also when prompted `do you want to proceed?` just enter yes (`y`) ):   
 
 ```
 $ conda update conda
@@ -61,10 +61,16 @@ $ conda install netcdf4
 
 ### Basemap
 
-**Basemap** is a graphic library for plotting (static, publication quality) geographical maps (see [http://matplotlib.org/basemap/](http://matplotlib.org/basemap/)). **Basemap** is available directly in **Anaconda** using the conda package manager, install with:
+**Basemap** is a graphic library for plotting (static, publication quality) geographical maps (see [http://matplotlib.org/basemap/](http://matplotlib.org/basemap/)). **Basemap** is available directly in **Anaconda** for Mac and Linux using the conda package manager, install with :
 
 ```
 $ conda install basemap
+```
+
+but on Windows, you'll have to use an alternative channel (conda-forge), the command becomes: 
+
+```
+$ conda install -c conda-forge basemap
 ```
 
 ### Cartopy
