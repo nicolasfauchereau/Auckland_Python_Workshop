@@ -10,15 +10,12 @@ Nicolas Fauchereau
 + [@gmail](mailto:Nicolas.Fauchereau@gmail.com)
 + [@niwa](mailto:Nicolas.Fauchereau@niwa.co.nz)
 
-<hr size=5>
-
 ### Table of contents
 
 - [The Anaconda python distribution](#the-anaconda-python-distribution)
 - [Installation of Some additional libraries](#installation-of-additional-libraries)
 - [Running the Jupyter notebooks](#running-the-jupyter-notebooks)
-
-<hr size=5>
+- [Content of the workshop](#contents)
 
 ## The Anaconda python distribution
 
@@ -118,7 +115,7 @@ That should bring up the Jupyter notebook dashboard (looking as below) in your d
 
 ![](https://github.com/nicolasfauchereau/Auckland_Python_Workshop/raw/master/images/jupyter_dashboard.png)
 
-## contents
+## Contents
 
 The following is a brief description of the workshop material content: 
 
