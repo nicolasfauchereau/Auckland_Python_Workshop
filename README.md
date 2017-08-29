@@ -132,7 +132,7 @@ The following is a brief description of the workshop material content:
 
 + `Jupyter_notebook.ipynb`: 
 
-  Introduction to the main features of the **Jupyter notebook **
+  Introduction to the main features of the **Jupyter notebook**
 
   ​
 
