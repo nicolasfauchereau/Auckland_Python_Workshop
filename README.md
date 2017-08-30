@@ -75,7 +75,7 @@ $ conda install -c conda-forge basemap
 
 ### Cartopy
 
-[**Cartopy**](http://scitools.org.uk/cartopy/) is a the second library for making geographical maps that we are going to see. It has been developed by the UKMO, and will eventually replace **Basemap**. However to this date Cartopy does not have all the features present in Basemap.
+[**Cartopy**](http://scitools.org.uk/cartopy/) is the second library for making geographical maps that we are going to see. It has been developed by the UKMO, and will eventually replace **Basemap**. However to this date Cartopy does not have all the features present in Basemap.
 
 Cartopy is not available through the anaconda standard channel, to install you need to use the community maintained *conda-forge* channel, with this syntax:
 
@@ -102,12 +102,12 @@ All of this can also be done using the Anaconda Navigator GUI (Graphical User In
 
 ![](https://github.com/nicolasfauchereau/Auckland_Python_Workshop/raw/master/images/navigator.png)
 
-If you go the `Environments` tab on the left, and select the `root` environment (we will talk about the concept of Python environments later in the workshop) you can then search, select and install available packages, including the ones mentionned above.
+If you go the `Environments` tab on the left, and select the `root` environment (we will talk about the concept of Python environments later in the workshop) you can then search, select and install available packages, including the ones mentioned above.
 
 
 ## Running the Jupyter notebook
 
-The material of the tutorial is in the form of [Jupyter notebooks](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). In a nutshell a Jupyter notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, rendered mathematic expression, plots, images, and rich media into a **single document**.
+The material of the tutorial is in the form of [Jupyter notebooks](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). In a nutshell a Jupyter notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, rendered mathematical expression, plots, images, and rich media into a **single document**.
 
 It is in my opinion the best environment when you are doing **exploratory data analysis**, and it allows you to weave comments, background information, interpretations and references along with the code itself, and it can be exported to a variety of formats (HTML, pdf) for sharing with colleagues. I **strongly** recommend spending some time learning about the notebook and its many features.
 
@@ -148,7 +148,7 @@ The following is a brief description of the workshop material content:
   + basic Python native data types:
     + dealing with numbers in native Python 
     + dealing with `strings` and their formatting 
-    + `lists`, `tuples`, `dictionnaries`, ...
+    + `lists`, `tuples`, `dictionaries`, ...
 
   + arithmetic operators (`+. -, *, =`)
 
@@ -174,7 +174,7 @@ The following is a brief description of the workshop material content:
 
 + `Scipy.ipynb`: 
 
-  [Scipy](http://www.scipy.org)  is the second pilar of the python scientific ecosystem. Where Numpy introduces a *data structure* (the ndarray), Scipy provides a collection of efficient *scientific algorithms*. These are organized in *submodules*, and cover topics ranging from linear algebra to signal and image processing and optimisation (see [here](https://docs.scipy.org/doc/scipy/reference/) for list of the submodules and their dedicated tutorial). In this notebook we will focus on **interpolation**, and on some of the **statistical** algorithms and methods that scipy makes available.
+  [Scipy](http://www.scipy.org)  is the second pillar of the python scientific ecosystem. Where Numpy introduces a *data structure* (the ndarray), Scipy provides a collection of efficient *scientific algorithms*. These are organized in *submodules*, and cover topics ranging from linear algebra to signal and image processing and optimisation (see [here](https://docs.scipy.org/doc/scipy/reference/) for list of the submodules and their dedicated tutorial). In this notebook we will focus on **interpolation**, and on some of the **statistical** algorithms and methods that scipy makes available.
 
   ​
 
@@ -185,11 +185,11 @@ The following is a brief description of the workshop material content:
   + The basics of the main data structures in Pandas: the **Series** and the **Dataframe** 
   + How to read from / write to common data files (csv, excel, space delimited, tab delimited etc). It will include how to read from a list of e.g. csv files, and concatenating their data in a Dataframe
   + How to manipulate tabular data in Pandas, from selecting rows / columns to more sophisticated conditional indexing 
-  + How to perform complex queries and assignements on Pandas Dataframes
+  + How to perform complex queries and assignments on Pandas Dataframes
   + How to perform **groupby** operations (*split / apply / combine*)
   + How to deal with Missing Values
 
-  One of the strenths of Pandas is its ability to store, and perform sophisticated operations on, **time-series**: i.e. data that is indexed by dates, dates and times, timestamps, etc. In the second part of the Pandas tutorial we will focus on **time-series manipulation in Pandas**. In particular we'll see: 
+  One of the strengths of Pandas is its ability to store, and perform sophisticated operations on, **time-series**: i.e. data that is indexed by dates, dates and times, timestamps, etc. In the second part of the Pandas tutorial we will focus on **time-series manipulation in Pandas**. In particular we'll see: 
 
   + how to read in and correctly parse files containing date / time information 
 
@@ -215,7 +215,7 @@ The following is a brief description of the workshop material content:
 
 + `plotting.ipynb`:
 
-  In this notebook we'll go over the basics of [**Matplotlib**](https://matplotlib.org/), the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python scientific ecosystem, on wich a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is [**seaborn**](https://seaborn.pydata.org/), a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
+  In this notebook we'll go over the basics of [**Matplotlib**](https://matplotlib.org/), the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python scientific ecosystem, on which a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is [**seaborn**](https://seaborn.pydata.org/), a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
 
   ​
 
