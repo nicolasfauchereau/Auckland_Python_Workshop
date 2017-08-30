@@ -31,7 +31,7 @@ For your platform.
 
 You should not need administrator rights, as Anaconda is completely self-contained and can be installed in your `HOME` directory. I suggest installing `Anaconda` in `/Users/USERNAME/anaconda` on Macs, and `C:\Users\USERNAME\anaconda` on Windows
 
-Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running (at the command line, i.e. in Windows select `Cmd.exe`, on Mac the `Terminal` application in `Utilities`, the `$` sign signifies the command prompt, so do not enter it !, also when prompted `do you want to proceed?` just enter yes (`y`) ):   
+Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running, at the command line, i.e. in Windows select `Cmd.exe`, on Mac the `Terminal` application in `Utilities`, the `$` sign signifies the command prompt, so do not enter it !, also when prompted `do you want to proceed?` just enter yes (`y`) :   
 
 ```
 $ conda update conda
@@ -127,19 +127,19 @@ The following is a brief description of the workshop material content:
 
 
 
-+ `test.ipynb`: 
++ `01_test.ipynb`: 
 
   A simple test Jupyter notebook to test the installation of the main libraries and their version 
 
-  ​
++ `02_resources.ipynb`: 
 
-+ `Jupyter_notebook.ipynb`: 
+  Some links to interesting resources and topics not covered during the workshop
+
++ `03_Jupyter_notebook.ipynb`
 
   Introduction to the main features of the **Jupyter notebook**
 
-  ​
-
-+ `introduction_python.ipynb`: Introduction the **basics** of the python language:
++ `04_introduction_Python.ipynb`: Introduction the **basics** of the python language:
 
   + what's an *interpreted programming language*, what is the python *interpreter*
 
@@ -158,9 +158,7 @@ The following is a brief description of the workshop material content:
 
   + reusing your code: writing *functions*, *modules* and *packages*
 
-    ​
-
-+ `Numpy.ipynb`: 
++ `05_Numpy.ipynb`: 
 
   A introduction to Numpy: Numpy introduces in particular a data structure called the `ndarray` (*N-dimensional* array) which can store numerical values. It is the foundational library of the Python  *scientific ecosystem*. In this notebook we'll learn the main principles of manipulating numpy *ndarrays*. While you might actually not spend much time working with numpy itself, it is necessary to understand its basic principles, as (almost) everything else in scientific Python is built on top of `numpy`. We'll see:
 
@@ -170,15 +168,11 @@ The following is a brief description of the workshop material content:
 
   + The main methods and functions in numpy operating on numpy `ndarrays`
 
-    ​
-
-+ `Scipy.ipynb`: 
++ `06_Scipy.ipynb`: 
 
   [Scipy](http://www.scipy.org)  is the second pilar of the python scientific ecosystem. Where Numpy introduces a *data structure* (the ndarray), Scipy provides a collection of efficient *scientific algorithms*. These are organized in *submodules*, and cover topics ranging from linear algebra to signal and image processing and optimisation (see [here](https://docs.scipy.org/doc/scipy/reference/) for list of the submodules and their dedicated tutorial). In this notebook we will focus on **interpolation**, and on some of the **statistical** algorithms and methods that scipy makes available.
 
-  ​
-
-+ `pandas.ipynb`
++ `07_Pandas.ipynb`
 
   This is where we're gonna spend quite a bit of time ! [Pandas](http://pandas.pydata.org/) is **THE** library that you need to use when dealing with *tabular* data, *i.e.* "spreadsheet-like" data, where values are stored in 2D arrays with rows and column labels. It is typically the type of data you find in csv, tab / space delimited or Excel files. In this notebook we'll see first: 
 
@@ -199,9 +193,7 @@ The following is a brief description of the workshop material content:
 
   + how to deal with missing values and missing index values
 
-    ​
-
-+ `xarray.ipynb`: 
++ `08_xarray.ipynb`: 
 
   [xarray](http://xarray.pydata.org/en/stable/) is a library to read / write netcdf files and for the manipulation of multi-dimensional labelled arrays, it is especially handy for *gridded data* varying along *latitudes, longitudes, time, depth, height*, etc. Its design follows closely that of Pandas, meaning that familiarity with Pandas allows to quickly pick up xarray. We'll see how to read, write netcdf files in xarray, and perform a series of common analyses such as: 
 
@@ -211,15 +203,11 @@ The following is a brief description of the workshop material content:
   + calculating composite anomalies
   + resampling, aggregation, groupby operations
 
-  ​
-
-+ `plotting.ipynb`:
++ `09_plotting.ipynb`:
 
   In this notebook we'll go over the basics of [**Matplotlib**](https://matplotlib.org/), the main plotting library in python. This is more or less the equivalent of *numpy* but for plotting: *i.e.* a foundational library of the Python scientific ecosystem, on wich a number of — more specialised — plotting libraries have been built. One of these we will briefly go over in particular is [**seaborn**](https://seaborn.pydata.org/), a plotting library handy for statistical plots. A short and non-exhaustive list of plotting libraries in Python is provided covering both static plots (i.e. *plotnine*, *ggplot2*, etc) and interactive plots (*bokeh*, *plotly*, *holoviews*, etc)
 
-  ​
-
-+ `mapping.ipynb`: 
++ `10_Mapping.ipynb`: 
 
   Making maps in Python: a brief overview of [**basemap**](https://matplotlib.org/basemap/), [**cartopy**](http://scitools.org.uk/cartopy/), and — very briefly, for interactive maps — [**folium**](https://github.com/python-visualization/folium). We'll see also briefly how to read shapefiles (with [geopandas](http://geopandas.org/)), transform into a [geojson](http://geojson.org/) and edit in the browser. 
 
