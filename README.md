@@ -10,6 +10,9 @@ Nicolas Fauchereau
 + [@gmail](mailto:Nicolas.Fauchereau@gmail.com)
 + [@niwa](mailto:Nicolas.Fauchereau@niwa.co.nz)
 
+
+<a href="https://notebooks.azure.com/import/gh/nicolasfauchereau/Auckland_Python_Workshop"><img src="https://notebooks.azure.com/launch.png" /></a>
+
 ### Table of contents
 
 - [The Anaconda python distribution](#the-anaconda-python-distribution)
